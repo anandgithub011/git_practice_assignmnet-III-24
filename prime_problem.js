@@ -1,17 +1,20 @@
 // check_prime or not
 
-let num=13;
-let count=0;                                                                                         
+let number=13;
 
-for(let i = 2; i <= Math.sqrt(num); i++){
+let factor=0;                                                                                         
+
+for(let i = 2; i <= Math.sqrt(number); i++){
    
-  if(num % i == 0){
-     count++;
+  if(number % i == 0){
+
+     factor++;
   }
 }
-if(count==0){
-  console.log("Prime");
+
+if(factor==0){
+  console.log("Prime Number");
 }
 else{
-  console.log("Not Prime");
+  console.log("Not a Prime Number");
 }
